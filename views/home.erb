@@ -1,0 +1,8 @@
+<h1>Currency pairs</h1>
+
+<ul>
+<% @currency_quotes.each do |key, value| %>
+  <% @dest = key[3..5] %>
+  <li><a href="/<%= @dest %>">Convert 1 <%= @dest %> to...</a></li>
+<% end %>
+</ul>
